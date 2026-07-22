@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miMRM - Registrarse</title>
+    <link rel="stylesheet" href="styleR.css">
+</head>
+<body>
+    //angelis marin 32467156 3b
+    <main class="Registro-container">
+        <section class="registro-card">
+            <header>
+                <h1>miMRM</h1>
+                <p>Registrarse</p>
+            </header>
+
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="Nombre">Nombre Completo: </label>
+                    <input type="text" name="nombre" id="n" pattern= "[A-Za-záéíóúñÑ]+" required placeholder="Escriba su nombre">
+
+                </div>
+
+                <div class="form-group">
+                    <label for="Cedula">Cedula: </label>
+                    <input type="tel" name="cedula" id="ce"  pattern="[0-9]{8,10}" required placeholder="Ej. 12345678">
+
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="e"  pattern="[0-9]{8,10}" required placeholder="ejemplo@correo.com">
+
+                </div>
+
+                <div class="form-group">
+                    
+                    <label for="cliente"> Natural </label>
+                    <input type="radio" name="clienteN" id="cn" required>
+
+                    <label for="cliente"> Juridico </label  required>
+                    <input type="radio" name="clienteJ" id="cj">
+                </div>
+
+                <div class="form-group">
+                    <label for="Numero">Número Telefónico: </label>
+                    <input type="tel" name="NumeroTelefonico" id="n"  pattern="[0-9]{11}" required placeholder="ej. 04121234567">
+
+                </div>
+
+                <div class="form-group">
+                    <label for="Sector">Sector/Industria</label>
+                   <select name="Sector" id="s">
+                        <option value=" Tecnología"> Tecnología</option>
+                        <option value=" Comercio"> Comercio</option>
+                        <option value=" Salud"> Salud</option>
+                        <option value=" Educación"> Educación</option>
+                   </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="Direccion">Dirección: </label>
+                    <input type="text" nombre="Direccion" id="d" placeholder="Calle, ciudad, estado">
+
+                </div>
+
+
+                <button type="submit" class="btn-secundary">Registrarse</button>
+            </form>
+
+            <footer>
+                <label for="text">¿Ya tienes una cuenta?</label>
+                <a href="login.html">iniciar Sesión</a>
+            </footer>
+
+
+        </section>
+
+
+
+
+
+
+    </main>
+
+    
+</body>
+</html>
